@@ -44,4 +44,4 @@ class Cell():
 
     def draw_move(self, to_cell, undo=False):
         line = Line(Point(*self.get_center()), Point(*to_cell.get_center()))
-        self._win.draw_line(line, "red" if undo else "gray")
+        self._win.draw_line(line, "gray" if undo else "red")
